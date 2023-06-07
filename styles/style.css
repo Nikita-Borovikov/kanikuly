@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&family=Quicksand:wght@600&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, black, 70% , #17D2F1);
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #f5bc6f;
+    height: 80px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header h1{
+    text-align: center;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-list .menu-list-item {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.menu-list .menu-list-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.authorization{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 10vw;
+}
+
+.authorization p{
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+.introduction-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Playfair', serif;
+    width: 45vw;
+    height: 45vh;
+    background-color: rgba(1,1,1,0.9);
+    border-radius: 30px;
+}
+
+.variaties .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.variaties{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../sources/images/china.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.variaties h1{
+    font-size: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+.introduction-video{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    width: 15vw;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    font-size: 28px;
+    font-weight: 900;
+    align-self: center;
+    letter-spacing: 10px;
+    z-index:1;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.link1{
+    background-image: url(../sources/images/pekin.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.link2{
+    background-image: url(../sources/images/pekin2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.link3{
+    background-image: url(../sources/images/pekin3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.link4{
+    background-image: url(../sources/images/pekin4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.link:hover{
+    filter: blur(0);
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 900;
+    align-self: center;
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: 10px;
+    transform: translateY(-5%);
+    width: 30vw;
+}
+
+.link:hover span{
+    opacity: 1;
+}
+
+.about_pekin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about_pekin p{
+    display: block;
+    width: 30vw;
+    font-size: 17px;
+}
+
+.photo{
+    border-radius: 30px;
+    width: 25vw;
+    margin: 5px;
+}
+
+.container_images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 60vw;
+    height: 60vh;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5bc6f;
+    height: 120vh;
+}
+
+.fact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-photo{
+    border-radius: 30px;
+    height: 40vh;
+    width: 40vh;
+}
+
+.features p{
+    width: 30vw;
+}
+
+h2{
+    text-align: center;
+}
+
+.places{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.video-places{
+    height: 100vh;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.places .container_images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60vw;
+    height: 60vh;
+}
+
+
+.myphoto {
+    background: url(../sources/images/avatar_about_me.webp);
+    height: 40vh;
+    width: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    position: relative;
+    left: 20%;
+}
+
+.introduce{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.information-about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 41vh;
+    width: 80vh;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10% 25% 25% 10%; 
+    position: relative;
+    z-index: -10;
+    color: black;
+    text-align: center;
+}
+
+.information-about-me p {
+    align-self: center;
+    font-size: 23px;
+}
+
+.information-about-me p span {
+    font-weight: bold;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialmedia a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 30px;
+    height: 100px;
+    width: 23vw;
+    margin: 10px;
+}
+
+.socialmedia a span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.socialmedia a:hover {
+    background-color: white;
+}
+
+.socialmedia a:hover span{
+    color: blue;
+}
+
+
